@@ -1,0 +1,13 @@
+@@ -0,0 +1,12 @@
+Task 2: SSL/TLS in HTTPS – Summary Report
+
+1. TLS Handshake Explanation:
+When I visited https://www.nasa.gov, my browser and the NASA server used the TLS handshake to set up a secure connection. The handshake started with a "Client Hello" message from my browser, and the server responded with a "Server Hello" and a digital certificate. This certificate proved the server’s identity and included the encryption methods it supports. After agreeing on a shared encryption key, all communication between my browser and the server became encrypted and protected.
+
+2. What protects against Man-in-the-Middle (MITM) attacks in TLS:
+TLS prevents MITM attacks through encryption and authentication. The digital certificate used in the handshake is signed by a trusted Certificate Authority, and my browser verifies it. Only the real server has the correct private key to complete the handshake. If an attacker tries to pretend to be the server, the handshake will fail. Encryption ensures that no one in the middle can read or change the data during the session.
+
+3. How TLS is used in websites (TLS in HTTPS):
+HTTPS means "HTTP over TLS." Every time I visit a secure website like https://www.nasa.gov, TLS protects the connection by encrypting the data being sent and received. It makes sure that passwords, credit card numbers, and other sensitive information can’t be seen or changed by others. TLS also ensures that I’m really talking to the correct website and not a fake version created by attackers.
+
+Screenshots of the TLS certificate, supported cipher suites, and the Wireshark TLS handshake have been included in GitHub as proof of testing and analysis.
